@@ -1,0 +1,54 @@
+name: Diyanet update
+
+# Diyanet publishes its calendar in advance, so a weekly look is enough.
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch Diyanet month starts
+        run: python3 -I scripts/sources/diyanet.py | tee /tmp/fetch.txt
+      - name: Rebuild corrections
+        run: python3 -I scripts/build.py | tee /tmp/build.txt
+      - name: Safety rules
+        run: |
+          git show HEAD:hijri_corrections.json > /tmp/base.json
+          python3 -I scripts/validate.py --base /tmp/base.json
+      - name: Open a pull request for review
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          branch="auto/diyanet-$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git commit -am "Diyanet calendar update $(date -u +%Y-%m-%d)"
+          git push -f origin "$branch"
+          {
+            echo "Automatic update from Diyanet's daily Hijri table. **Review before merging**: the app picks up main within 24 hours."
+            echo
+            echo '```'
+            cat /tmp/fetch.txt /tmp/build.txt
+            echo '```'
+            echo
+            echo "Any line starting with CHANGED means Diyanet revised an already-published date; check it against diyanet.gov.tr."
+          } > /tmp/body.md
+          gh pr create --base main --head "$branch" \
+            --title "Diyanet calendar update $(date -u +%Y-%m-%d)" --body-file /tmp/body.md \
+            || echo "A pull request for $branch already exists; branch updated."

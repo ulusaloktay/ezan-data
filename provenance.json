@@ -1,0 +1,117 @@
+{
+  "_comment": "Why each generated entry in hijri_corrections.json has its value. Written by scripts/build.py.",
+  "entries": {
+    "1448/6/diyanet": {
+      "offset": 1,
+      "official_first_day": "2026-11-10",
+      "raw_first_day": "2026-11-11",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1448/8/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-01-09",
+      "raw_first_day": "2027-01-09",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1448/9/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-02-08",
+      "raw_first_day": "2027-02-08",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1448/10/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-03-09",
+      "raw_first_day": "2027-03-09",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1448/11/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-04-08",
+      "raw_first_day": "2027-04-08",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1448/12/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-05-07",
+      "raw_first_day": "2027-05-07",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/1/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-06-06",
+      "raw_first_day": "2027-06-06",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/2/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-07-05",
+      "raw_first_day": "2027-07-05",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/3/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-08-03",
+      "raw_first_day": "2027-08-03",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/4/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-09-02",
+      "raw_first_day": "2027-09-02",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/5/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-10-01",
+      "raw_first_day": "2027-10-01",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/6/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-10-31",
+      "raw_first_day": "2027-10-31",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/7/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-11-29",
+      "raw_first_day": "2027-11-29",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    },
+    "1449/8/diyanet": {
+      "offset": 0,
+      "official_first_day": "2027-12-29",
+      "raw_first_day": "2027-12-29",
+      "source": "Diyanet daily Hijri table",
+      "url": "https://namazvakitleri.diyanet.gov.tr/tr-TR/9541/istanbul-icin-namaz-vakti",
+      "recorded_at": "2026-10-28"
+    }
+  }
+}
