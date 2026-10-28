@@ -1,0 +1,478 @@
+{
+  "official": "JAKIM e-Solat",
+  "checked_at": "2026-10-28",
+  "country_tune_minutes": {
+    "fajr": 11,
+    "sunrise": -2,
+    "dhuhr": 4,
+    "asr": 5,
+    "maghrib": 4,
+    "isha": 4
+  },
+  "country_after_tune_min_max": {
+    "fajr": [
+      -2,
+      3
+    ],
+    "sunrise": [
+      -5,
+      0
+    ],
+    "dhuhr": [
+      0,
+      2
+    ],
+    "asr": [
+      0,
+      6
+    ],
+    "maghrib": [
+      0,
+      4
+    ],
+    "isha": [
+      0,
+      8
+    ]
+  },
+  "places": [
+    {
+      "name": "Kuala Lumpur",
+      "id": "WLY01",
+      "from": "2026-01-01",
+      "to": "2026-12-31",
+      "days": 365,
+      "app_minus_official": {
+        "fajr": {
+          "min": -12,
+          "max": -9,
+          "median": -10
+        },
+        "sunrise": {
+          "min": 0,
+          "max": 1,
+          "median": 1
+        },
+        "dhuhr": {
+          "min": -3,
+          "max": -2,
+          "median": -3
+        },
+        "asr": {
+          "min": -4,
+          "max": 0,
+          "median": -2
+        },
+        "maghrib": {
+          "min": -3,
+          "max": -1,
+          "median": -2
+        },
+        "isha": {
+          "min": -3,
+          "max": -1,
+          "median": -2
+        }
+      },
+      "tune_minutes": {
+        "fajr": 11,
+        "sunrise": -1,
+        "dhuhr": 3,
+        "asr": 4,
+        "maghrib": 3,
+        "isha": 3
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          2
+        ],
+        "sunrise": [
+          -1,
+          0
+        ],
+        "dhuhr": [
+          0,
+          1
+        ],
+        "asr": [
+          0,
+          4
+        ],
+        "maghrib": [
+          0,
+          2
+        ],
+        "isha": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "Johor Bahru",
+      "id": "JHR02",
+      "from": "2026-01-01",
+      "to": "2026-12-31",
+      "days": 365,
+      "app_minus_official": {
+        "fajr": {
+          "min": -11,
+          "max": -9,
+          "median": -10
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0
+        },
+        "dhuhr": {
+          "min": -3,
+          "max": -2,
+          "median": -2
+        },
+        "asr": {
+          "min": -3,
+          "max": 1,
+          "median": -1
+        },
+        "maghrib": {
+          "min": -2,
+          "max": 0,
+          "median": -1
+        },
+        "isha": {
+          "min": -2,
+          "max": 0,
+          "median": -1
+        }
+      },
+      "tune_minutes": {
+        "fajr": 10,
+        "sunrise": -1,
+        "dhuhr": 3,
+        "asr": 3,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          1
+        ],
+        "asr": [
+          0,
+          4
+        ],
+        "maghrib": [
+          0,
+          2
+        ],
+        "isha": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "George Town",
+      "id": "PNG01",
+      "from": "2026-01-01",
+      "to": "2026-12-31",
+      "days": 365,
+      "app_minus_official": {
+        "fajr": {
+          "min": -11,
+          "max": -9,
+          "median": -10
+        },
+        "sunrise": {
+          "min": 1,
+          "max": 2,
+          "median": 2
+        },
+        "dhuhr": {
+          "min": -3,
+          "max": -2,
+          "median": -2
+        },
+        "asr": {
+          "min": -3,
+          "max": 0,
+          "median": -1
+        },
+        "maghrib": {
+          "min": -2,
+          "max": -1,
+          "median": -1
+        },
+        "isha": {
+          "min": -2,
+          "max": -1,
+          "median": -1
+        }
+      },
+      "tune_minutes": {
+        "fajr": 10,
+        "sunrise": -2,
+        "dhuhr": 3,
+        "asr": 3,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -1,
+          0
+        ],
+        "dhuhr": [
+          0,
+          1
+        ],
+        "asr": [
+          0,
+          3
+        ],
+        "maghrib": [
+          0,
+          1
+        ],
+        "isha": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "Kota Bharu",
+      "id": "KTN01",
+      "from": "2026-01-01",
+      "to": "2026-12-31",
+      "days": 365,
+      "app_minus_official": {
+        "fajr": {
+          "min": -11,
+          "max": -9,
+          "median": -10
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 0,
+          "median": -1
+        },
+        "dhuhr": {
+          "min": -3,
+          "max": -2,
+          "median": -3
+        },
+        "asr": {
+          "min": -3,
+          "max": 0,
+          "median": -2
+        },
+        "maghrib": {
+          "min": -2,
+          "max": -1,
+          "median": -2
+        },
+        "isha": {
+          "min": 2,
+          "max": 4,
+          "median": 3
+        }
+      },
+      "tune_minutes": {
+        "fajr": 10,
+        "sunrise": 0,
+        "dhuhr": 3,
+        "asr": 3,
+        "maghrib": 2,
+        "isha": -2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -1,
+          0
+        ],
+        "dhuhr": [
+          0,
+          1
+        ],
+        "asr": [
+          0,
+          3
+        ],
+        "maghrib": [
+          0,
+          1
+        ],
+        "isha": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "Kota Kinabalu",
+      "id": "SBH07",
+      "from": "2026-01-01",
+      "to": "2026-12-31",
+      "days": 365,
+      "app_minus_official": {
+        "fajr": {
+          "min": -11,
+          "max": -8,
+          "median": -9
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0
+        },
+        "dhuhr": {
+          "min": -3,
+          "max": -2,
+          "median": -2
+        },
+        "asr": {
+          "min": -3,
+          "max": 1,
+          "median": -1
+        },
+        "maghrib": {
+          "min": -2,
+          "max": 0,
+          "median": -1
+        },
+        "isha": {
+          "min": -2,
+          "max": 0,
+          "median": -1
+        }
+      },
+      "tune_minutes": {
+        "fajr": 10,
+        "sunrise": -1,
+        "dhuhr": 3,
+        "asr": 3,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          2
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          1
+        ],
+        "asr": [
+          0,
+          4
+        ],
+        "maghrib": [
+          0,
+          2
+        ],
+        "isha": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "Kuching",
+      "id": "SWK08",
+      "from": "2026-01-01",
+      "to": "2026-12-31",
+      "days": 365,
+      "app_minus_official": {
+        "fajr": {
+          "min": -13,
+          "max": -10,
+          "median": -11
+        },
+        "sunrise": {
+          "min": -3,
+          "max": -1,
+          "median": -2
+        },
+        "dhuhr": {
+          "min": -4,
+          "max": -3,
+          "median": -4
+        },
+        "asr": {
+          "min": -5,
+          "max": -1,
+          "median": -3
+        },
+        "maghrib": {
+          "min": -4,
+          "max": -2,
+          "median": -3
+        },
+        "isha": {
+          "min": -4,
+          "max": -2,
+          "median": -3
+        }
+      },
+      "tune_minutes": {
+        "fajr": 12,
+        "sunrise": 1,
+        "dhuhr": 4,
+        "asr": 5,
+        "maghrib": 4,
+        "isha": 4
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          2
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          1
+        ],
+        "asr": [
+          0,
+          4
+        ],
+        "maghrib": [
+          0,
+          2
+        ],
+        "isha": [
+          0,
+          2
+        ]
+      }
+    }
+  ]
+}

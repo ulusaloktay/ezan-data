@@ -1,0 +1,36 @@
+{
+  "_comment": "Countries whose official prayer-time tables we compare against. method/school/latitude_adjustment must be what the app sends to Aladhan for that country (authorityCalculationMethod / authorityAsrSchool in the app); a tune is only applied when the user's settings match. Pick reference places that cover the country's east/west and north/south extremes.",
+  "countries": {
+    "TR": {
+      "official": "Diyanet İşleri Başkanlığı",
+      "source": "diyanet",
+      "method": 13,
+      "school": 0,
+      "latitude_adjustment": 3,
+      "places": [
+        {"name": "İstanbul", "id": "9541", "lat": 41.0082, "lng": 28.9784},
+        {"name": "Ankara", "id": "9206", "lat": 39.9334, "lng": 32.8597},
+        {"name": "İzmir", "id": "9560", "lat": 38.4237, "lng": 27.1428},
+        {"name": "Adana", "id": "9146", "lat": 37.0, "lng": 35.3213},
+        {"name": "Edirne", "id": "9419", "lat": 41.6771, "lng": 26.5557},
+        {"name": "Erzurum", "id": "9451", "lat": 39.9043, "lng": 41.2679},
+        {"name": "Van", "id": "9930", "lat": 38.5012, "lng": 43.3729}
+      ]
+    },
+    "MY": {
+      "official": "JAKIM e-Solat",
+      "source": "jakim",
+      "method": 17,
+      "school": 0,
+      "latitude_adjustment": 3,
+      "places": [
+        {"name": "Kuala Lumpur", "id": "WLY01", "lat": 3.139, "lng": 101.6869},
+        {"name": "Johor Bahru", "id": "JHR02", "lat": 1.4927, "lng": 103.7414},
+        {"name": "George Town", "id": "PNG01", "lat": 5.4141, "lng": 100.3288},
+        {"name": "Kota Bharu", "id": "KTN01", "lat": 6.1254, "lng": 102.2381},
+        {"name": "Kota Kinabalu", "id": "SBH07", "lat": 5.9804, "lng": 116.0735},
+        {"name": "Kuching", "id": "SWK08", "lat": 1.5533, "lng": 110.3592}
+      ]
+    }
+  }
+}

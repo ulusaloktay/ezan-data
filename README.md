@@ -50,6 +50,18 @@ python3 scripts/validate.py --base <(git show origin/main:hijri_corrections.json
 
 Corrections are per month. When an authority's month is a different length from the raw month, the boundary day is off by one (for example Diyanet's Cemaziyelahir 1448: 10 Nov and 9 Dec 2026). `build.py` prints a warning in that case.
 
+## Prayer times: prayer_tune.json
+
+Prayer times come from a formula, so they don't change from day to day the way month starts do. What can be wrong is that Aladhan's version of a country's method does not exactly match the official table. Once a month, `scripts/prayer_check.py` compares a year of official times with what the app shows, at the reference places listed in `registry/prayer_sources.json` (east/west and north/south extremes). It then derives how many minutes to add to each prayer:
+
+- **dhuhr, asr, maghrib, isha:** never earlier than official. Praying or breaking the fast before the time is the worse error.
+- **sunrise:** never later than official.
+- **fajr:** the app shows one time for both the end of suhoor and the start of fajr, so the tune keeps the largest error either way as small as possible.
+
+Each reference place gets its own tune, which applies within `radius_km`. The country-wide tune, used farther away, is the worst case over all places. The app applies a tune only if the user's method, Asr school and latitude adjustment are the ones it was measured with. The run stops for a human if an official table has suspicious days (>5 min from the usual difference), a tune exceeds ±15 min, or a single place still varies by more than 4 min after tuning.
+
+Measurements are in `reports/prayer/<CC>.json`. Countries with official machine-readable tables so far: TR (Diyanet), MY (JAKIM). Add more by writing a fetcher in `scripts/prayer_sources.py` and listing reference places.
+
 ## Keeping the app in sync
 
 When the app's `countryToAuthority` or `authorityDefaultAdjustment` changes (`lib/utils/hijri_calendar_authority.dart`), update `registry/authorities.json`. When releasing the app, copy the current `hijri_corrections.json` into `assets/json/` so the bundled copy is never older than `main`.

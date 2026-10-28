@@ -22,9 +22,47 @@ def version_tuple(version):
     return tuple(int(p) for p in version.split("."))
 
 
+PRAYERS = ("fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha")
+MAX_TUNE = 15
+
+
+def validate_prayer_tune(base_path):
+    path = CORRECTIONS.parent / "prayer_tune.json"
+    if not path.exists():
+        return []
+    errors = []
+    data = load_json(path)
+    version = str(data.get("_version", ""))
+    if not SEMVER.match(version):
+        errors.append(f"prayer_tune.json: _version {version!r} is not x.y.z")
+    for code, country in data.get("countries", {}).items():
+        for field in ("method", "school", "latitude_adjustment"):
+            if not isinstance(country.get(field), int):
+                errors.append(f"prayer_tune {code}: {field} must be an integer")
+        blocks = [("country", country.get("minutes"))]
+        blocks += [(r.get("name", "?"), r.get("minutes")) for r in country.get("regions", [])]
+        for region in country.get("regions", []):
+            if not all(isinstance(region.get(k), (int, float)) for k in ("lat", "lng", "radius_km")):
+                errors.append(f"prayer_tune {code}/{region.get('name')}: lat, lng and radius_km are required")
+        for where, minutes in blocks:
+            if not isinstance(minutes, dict) or set(minutes) != set(PRAYERS):
+                errors.append(f"prayer_tune {code}/{where}: minutes must list exactly {', '.join(PRAYERS)}")
+                continue
+            for prayer, value in minutes.items():
+                if not isinstance(value, int) or isinstance(value, bool) or abs(value) > MAX_TUNE:
+                    errors.append(f"prayer_tune {code}/{where}/{prayer}: {value!r} is not an integer within ±{MAX_TUNE}")
+    if base_path and Path(base_path).exists() and SEMVER.match(version):
+        base = load_json(base_path)
+        if base.get("countries") != data.get("countries") and \
+                version_tuple(version) <= version_tuple(str(base.get("_version", "0.0.0"))):
+            errors.append(f"prayer_tune.json changed but _version {version} is not above {base.get('_version')}")
+    return errors
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", help="Previously published hijri_corrections.json")
+    parser.add_argument("--base-tune", help="Previously published prayer_tune.json")
     args = parser.parse_args()
 
     errors = []
@@ -77,6 +115,8 @@ def main():
             if version_tuple(version) <= version_tuple(str(base.get("_version", "0.0.0"))):
                 errors.append(f"corrections changed but _version {version} is not above "
                               f"the published {base.get('_version')}; the app would ignore the update")
+
+    errors.extend(validate_prayer_tune(args.base_tune))
 
     for error in errors:
         print("ERROR:", error)
