@@ -1,0 +1,177 @@
+{
+  "_comment": "Hijri Date Corrections for global accuracy. Updated periodically. TR adjustments are applied on top of the raw Aladhan date (timings, method=13, adjustment=0, calendar HJCoSA) and, in religious_days_service, on top of the DIYANET month-start table, so any TR value other than the real Diyanet-vs-raw difference shifts dates by a day. 1446-1447: TR corrected to 0 on 2026-08-10, cross-checked against Diyanet (Ramazan Bayrami 2026, Mevlid Kandili 2026, Ramazan 2027); the old blanket -1 was unverified and wrong. 1448 [1.0.5, 2026-10-28]: re-verified month by month against Diyanet's own daily Hijri dates (namazvakitleri.diyanet.gov.tr yearly table, 28 Oct 2026 - 31 Dec 2027, 396 days) and Diyanet dini gunler dates. Every day matches raw with offset 0 EXCEPT Cemaziyelahir (month 6): Diyanet starts it on 10 Nov 2026, raw on 11 Nov, both start Recep on 10 Dec, so TR month 6 = +1. Known limit of per-month offsets: 10 Nov 2026 (raw 30/5) and 9 Dec 2026 (raw 29/6, raw month has 29 days) stay 1 day off. Day anchors for offset 0: 1 Muharrem = 16 Jun 2026; Asure = 25 Jun 2026; Mevlid Kandili = night beginning the evening of 24 Aug 2026 (kandil nights are dated by the day the night starts, so 24 Aug daytime must be 11 Rebiulevvel; raw gives 11); 1 Recep (Uc Aylar) = 10 Dec 2026; Mirac = 4 Jan 2027 (26 Recep); Berat = 22 Jan 2027 (14 Saban); 1 Ramazan = 8 Feb 2027; 1 Sevval = 9 Mar 2027; 10 Zilhicce = 16 May 2027. Months 2 and 4 (already past) have no direct anchor; their neighbours match with 0. 1449: Diyanet's daily table matches raw through 31 Dec 2027, so no entries are needed (TR default is 0). 1448 has no '_default: 0' placeholders on purpose: they would override the -1 country defaults of karachi/bangladesh/morocco/tunisia/algeria/moonsighting for unobserved months. Add per-country entries once a month is confirmed. PK/IN/BD/MA/DZ/TN/GB 1448 untouched: no official announcement yet.",
+  "_version": "1.0.5",
+  "_lastUpdate": "2026-10-28",
+  "_format": "corrections[hijriYear][hijriMonth][countryCode] = adjustment",
+  "corrections": {
+    "1446": {
+      "7": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "MA": -1,
+        "DZ": -1,
+        "TN": -1,
+        "_default": 0
+      },
+      "8": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "MA": -1,
+        "DZ": -1,
+        "TN": -1,
+        "_default": 0
+      },
+      "9": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "IN": -1,
+        "MA": -1,
+        "DZ": -1,
+        "TN": -1,
+        "GB": -1,
+        "_default": 0
+      },
+      "10": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "IN": -1,
+        "MA": -1,
+        "DZ": -1,
+        "TN": -1,
+        "GB": -1,
+        "_default": 0
+      },
+      "11": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "_default": 0
+      },
+      "12": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "_default": 0
+      }
+    },
+    "1447": {
+      "1": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "MA": -1,
+        "_default": 0
+      },
+      "2": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "_default": 0
+      },
+      "3": {
+        "TR": 0,
+        "_default": 0
+      },
+      "4": {
+        "TR": 0,
+        "_default": 0
+      },
+      "5": {
+        "TR": 0,
+        "_default": 0
+      },
+      "6": {
+        "TR": 0,
+        "_default": 0
+      },
+      "7": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "_default": 0
+      },
+      "8": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "_default": 0
+      },
+      "9": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "IN": -1,
+        "MA": -1,
+        "DZ": -1,
+        "TN": -1,
+        "GB": -1,
+        "_default": 0
+      },
+      "10": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "IN": -1,
+        "MA": -1,
+        "DZ": -1,
+        "TN": -1,
+        "GB": -1,
+        "_default": 0
+      },
+      "11": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "_default": 0
+      },
+      "12": {
+        "TR": 0,
+        "PK": -1,
+        "BD": -1,
+        "_default": 0
+      }
+    },
+    "1448": {
+      "1": {
+        "TR": 0
+      },
+      "2": {
+        "TR": 0
+      },
+      "3": {
+        "TR": 0
+      },
+      "4": {
+        "TR": 0
+      },
+      "5": {
+        "TR": 0
+      },
+      "6": {
+        "TR": 1
+      },
+      "7": {
+        "TR": 0
+      },
+      "8": {
+        "TR": 0
+      },
+      "9": {
+        "TR": 0
+      },
+      "10": {
+        "TR": 0
+      },
+      "11": {
+        "TR": 0
+      },
+      "12": {
+        "TR": 0
+      }
+    }
+  }
+}
