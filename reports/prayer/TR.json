@@ -1,0 +1,551 @@
+{
+  "official": "Diyanet İşleri Başkanlığı",
+  "checked_at": "2026-10-28",
+  "country_tune_minutes": {
+    "fajr": 0,
+    "sunrise": -1,
+    "dhuhr": 1,
+    "asr": 1,
+    "maghrib": 2,
+    "isha": 2
+  },
+  "country_after_tune_min_max": {
+    "fajr": [
+      -1,
+      1
+    ],
+    "sunrise": [
+      -2,
+      0
+    ],
+    "dhuhr": [
+      0,
+      2
+    ],
+    "asr": [
+      0,
+      2
+    ],
+    "maghrib": [
+      0,
+      3
+    ],
+    "isha": [
+      0,
+      3
+    ]
+  },
+  "places": [
+    {
+      "name": "İstanbul",
+      "id": "9541",
+      "from": "2026-10-28",
+      "to": "2027-12-31",
+      "days": 396,
+      "app_minus_official": {
+        "fajr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "dhuhr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "asr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "maghrib": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        },
+        "isha": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        }
+      },
+      "tune_minutes": {
+        "fajr": 0,
+        "sunrise": -1,
+        "dhuhr": 1,
+        "asr": 1,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          2
+        ],
+        "asr": [
+          0,
+          2
+        ],
+        "maghrib": [
+          0,
+          3
+        ],
+        "isha": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "name": "Ankara",
+      "id": "9206",
+      "from": "2026-10-28",
+      "to": "2027-12-31",
+      "days": 396,
+      "app_minus_official": {
+        "fajr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "dhuhr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "asr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "maghrib": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        },
+        "isha": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        }
+      },
+      "tune_minutes": {
+        "fajr": 0,
+        "sunrise": -1,
+        "dhuhr": 1,
+        "asr": 1,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          2
+        ],
+        "asr": [
+          0,
+          2
+        ],
+        "maghrib": [
+          0,
+          3
+        ],
+        "isha": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "name": "İzmir",
+      "id": "9560",
+      "from": "2026-10-28",
+      "to": "2027-12-31",
+      "days": 396,
+      "app_minus_official": {
+        "fajr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "dhuhr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "asr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "maghrib": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        },
+        "isha": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        }
+      },
+      "tune_minutes": {
+        "fajr": 0,
+        "sunrise": -1,
+        "dhuhr": 1,
+        "asr": 1,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          2
+        ],
+        "asr": [
+          0,
+          2
+        ],
+        "maghrib": [
+          0,
+          3
+        ],
+        "isha": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "name": "Adana",
+      "id": "9146",
+      "from": "2026-10-28",
+      "to": "2027-12-31",
+      "days": 396,
+      "app_minus_official": {
+        "fajr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "dhuhr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "asr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "maghrib": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "isha": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        }
+      },
+      "tune_minutes": {
+        "fajr": 0,
+        "sunrise": -1,
+        "dhuhr": 1,
+        "asr": 1,
+        "maghrib": 1,
+        "isha": 1
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          2
+        ],
+        "asr": [
+          0,
+          2
+        ],
+        "maghrib": [
+          0,
+          2
+        ],
+        "isha": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "name": "Edirne",
+      "id": "9419",
+      "from": "2026-10-28",
+      "to": "2027-12-31",
+      "days": 396,
+      "app_minus_official": {
+        "fajr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "dhuhr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "asr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "maghrib": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        },
+        "isha": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        }
+      },
+      "tune_minutes": {
+        "fajr": 0,
+        "sunrise": -1,
+        "dhuhr": 1,
+        "asr": 1,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          2
+        ],
+        "asr": [
+          0,
+          2
+        ],
+        "maghrib": [
+          0,
+          3
+        ],
+        "isha": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "name": "Erzurum",
+      "id": "9451",
+      "from": "2026-10-28",
+      "to": "2027-12-31",
+      "days": 396,
+      "app_minus_official": {
+        "fajr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "dhuhr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "asr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "maghrib": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        },
+        "isha": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        }
+      },
+      "tune_minutes": {
+        "fajr": 0,
+        "sunrise": -1,
+        "dhuhr": 1,
+        "asr": 1,
+        "maghrib": 2,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          2
+        ],
+        "asr": [
+          0,
+          2
+        ],
+        "maghrib": [
+          0,
+          3
+        ],
+        "isha": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "name": "Van",
+      "id": "9930",
+      "from": "2026-10-28",
+      "to": "2027-12-31",
+      "days": 396,
+      "app_minus_official": {
+        "fajr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "sunrise": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "dhuhr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "asr": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "maghrib": {
+          "min": -1,
+          "max": 1,
+          "median": 0.0
+        },
+        "isha": {
+          "min": -2,
+          "max": 1,
+          "median": 0.0
+        }
+      },
+      "tune_minutes": {
+        "fajr": 0,
+        "sunrise": -1,
+        "dhuhr": 1,
+        "asr": 1,
+        "maghrib": 1,
+        "isha": 2
+      },
+      "after_tune_min_max": {
+        "fajr": [
+          -1,
+          1
+        ],
+        "sunrise": [
+          -2,
+          0
+        ],
+        "dhuhr": [
+          0,
+          2
+        ],
+        "asr": [
+          0,
+          2
+        ],
+        "maghrib": [
+          0,
+          2
+        ],
+        "isha": [
+          0,
+          3
+        ]
+      }
+    }
+  ]
+}

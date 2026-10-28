@@ -1,0 +1,51 @@
+name: Prayer times check
+
+# Official tables change rarely (a new year, a method change), so monthly is enough.
+on:
+  schedule:
+    - cron: "0 4 2 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compare with official tables
+        run: python3 -I scripts/prayer_check.py 2>&1 | tee /tmp/check.txt
+      - name: Safety rules
+        run: |
+          git show HEAD:prayer_tune.json > /tmp/base_tune.json
+          python3 -I scripts/validate.py --base-tune /tmp/base_tune.json
+      - name: Open a pull request when a tune changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- prayer_tune.json; then
+            echo "Tunes unchanged."
+            exit 0
+          fi
+          branch="auto/prayer-times-$(date -u +%Y-%m)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add prayer_tune.json reports/prayer
+          git commit -m "Prayer time tunes $(date -u +%Y-%m)"
+          git push -f origin "$branch"
+          {
+            echo "An official prayer-time table no longer matches the published tunes. **Review before merging**: the app picks up main within 24 hours."
+            echo
+            echo '```'
+            cat /tmp/check.txt
+            echo '```'
+          } > /tmp/body.md
+          gh pr create --base main --head "$branch" \
+            --title "Prayer time tunes $(date -u +%Y-%m)" --body-file /tmp/body.md \
+            || echo "A pull request for $branch already exists; branch updated."

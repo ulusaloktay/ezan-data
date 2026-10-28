@@ -1,0 +1,309 @@
+{
+  "_comment": "Which authority each country follows (mirrors countryToAuthority / authorityDefaultAdjustment in the app's hijri_calendar_authority.dart; keep both in sync). app_default is what the app uses for a month that has no entry in hijri_corrections.json. mode: calculated = published in advance; saudi = follows Saudi announcements, already reflected by the raw HJCoSA calendar; sighting = announced on the evening of the 29th.",
+  "authorities": {
+    "algeria": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Algeria Ministry of Religious Affairs and Endowments",
+      "url": null,
+      "app_default": -1,
+      "countries": [
+        "DZ"
+      ]
+    },
+    "bangladesh": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Bangladesh National Moon Sighting Committee (Islamic Foundation)",
+      "url": "https://islamicfoundation.gov.bd",
+      "app_default": -1,
+      "countries": [
+        "BD"
+      ]
+    },
+    "diyanet": {
+      "mode": "calculated",
+      "source": "diyanet_daily",
+      "official": "Diyanet İşleri Başkanlığı",
+      "url": "https://namazvakitleri.diyanet.gov.tr",
+      "app_default": 0,
+      "countries": [
+        "AL",
+        "AT",
+        "AZ",
+        "BA",
+        "BG",
+        "CY",
+        "DE",
+        "GR",
+        "MK",
+        "NL",
+        "TR",
+        "XK"
+      ]
+    },
+    "egyptian": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Dar al-Ifta al-Misriyyah",
+      "url": "https://www.dar-alifta.org",
+      "app_default": 0,
+      "countries": [
+        "EG",
+        "SD",
+        "SS"
+      ]
+    },
+    "france": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Grande Mosquée de Paris / CFCM; Belgium and Switzerland announce separately",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "BE",
+        "CH",
+        "FR"
+      ]
+    },
+    "gulf": {
+      "mode": "sighting",
+      "source": null,
+      "official": "National moon-sighting committees (UAE, Bahrain, Oman)",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "AE",
+        "BH",
+        "OM"
+      ]
+    },
+    "indonesia": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Kementerian Agama sidang isbat",
+      "url": "https://kemenag.go.id",
+      "app_default": 0,
+      "countries": [
+        "ID"
+      ]
+    },
+    "isna": {
+      "mode": "calculated",
+      "source": null,
+      "official": "Fiqh Council of North America (calculated, published in advance)",
+      "url": "https://fiqhcouncil.org",
+      "app_default": 0,
+      "countries": [
+        "AU",
+        "CA",
+        "DK",
+        "FI",
+        "JP",
+        "KR",
+        "MX",
+        "NO",
+        "NZ",
+        "SE",
+        "TT",
+        "TW",
+        "US"
+      ]
+    },
+    "jordan": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Jordan Supreme Judge Department",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "JO",
+        "PS"
+      ]
+    },
+    "karachi": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Pakistan Central Ruet-e-Hilal Committee (Ministry of Religious Affairs); India, Sri Lanka, Afghanistan and Nepal announce separately",
+      "url": null,
+      "app_default": -1,
+      "countries": [
+        "AF",
+        "IN",
+        "LK",
+        "NP",
+        "PK"
+      ]
+    },
+    "kuwait": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Kuwait Sharia Moon Sighting Authority",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "KW"
+      ]
+    },
+    "libya": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Libya General Authority of Awqaf",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "LY"
+      ]
+    },
+    "malaysia": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Keeper of the Rulers' Seal (Malaysia) / JAKIM; neighbours announce separately",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "BN",
+        "KH",
+        "MM",
+        "MY",
+        "PH",
+        "TH"
+      ]
+    },
+    "moonsighting": {
+      "mode": "sighting",
+      "source": null,
+      "official": "UK national moon-sighting committees",
+      "url": null,
+      "app_default": -1,
+      "countries": [
+        "GB"
+      ]
+    },
+    "morocco": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Morocco Ministry of Habous and Islamic Affairs",
+      "url": "https://www.habous.gov.ma",
+      "app_default": -1,
+      "countries": [
+        "BF",
+        "CI",
+        "GM",
+        "GN",
+        "MA",
+        "ML",
+        "MR",
+        "NE",
+        "SN"
+      ]
+    },
+    "mwl": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Mixed group: each country follows its own mufti or Saudi; record per country",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "AR",
+        "BR",
+        "CL",
+        "CM",
+        "CN",
+        "CO",
+        "ER",
+        "ES",
+        "ET",
+        "FJ",
+        "GH",
+        "IQ",
+        "IT",
+        "KE",
+        "LB",
+        "MZ",
+        "NG",
+        "PE",
+        "PL",
+        "PT",
+        "RO",
+        "SL",
+        "SY",
+        "TD",
+        "TZ",
+        "UG",
+        "VE",
+        "ZA"
+      ]
+    },
+    "qatar": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Qatar Ministry of Awqaf crescent sighting committee",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "QA"
+      ]
+    },
+    "russia": {
+      "mode": "calculated",
+      "source": null,
+      "official": "Spiritual Administration of Muslims of the Russian Federation (DUM RF); Central Asian muftiates announce separately",
+      "url": "https://dumrf.ru",
+      "app_default": 0,
+      "countries": [
+        "KG",
+        "KZ",
+        "RU",
+        "TJ",
+        "TM",
+        "UZ"
+      ]
+    },
+    "singapore": {
+      "mode": "sighting",
+      "source": null,
+      "official": "MUIS (Majlis Ugama Islam Singapura)",
+      "url": "https://www.muis.gov.sg",
+      "app_default": 0,
+      "countries": [
+        "HK",
+        "SG"
+      ]
+    },
+    "tehran": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Office of the Supreme Leader istihlal committee (Iran)",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "IR"
+      ]
+    },
+    "tunisia": {
+      "mode": "sighting",
+      "source": null,
+      "official": "Mufti of the Tunisian Republic",
+      "url": null,
+      "app_default": -1,
+      "countries": [
+        "TN"
+      ]
+    },
+    "ummAlQura": {
+      "mode": "saudi",
+      "source": null,
+      "official": "Saudi Supreme Court / Umm al-Qura",
+      "url": null,
+      "app_default": 0,
+      "countries": [
+        "DJ",
+        "MV",
+        "SA",
+        "SO",
+        "YE"
+      ]
+    }
+  }
+}
