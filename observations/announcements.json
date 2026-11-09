@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "target": "EG",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-11",
+      "source": "Dar al-Ifta al-Misriyyah",
+      "url": "https://www.youm7.com/story/2026/11/9/%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A5%D9%81%D8%AA%D8%A7%D8%A1-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%B9%D8%A7%D8%A1-11-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-%D8%A3%D9%88%D9%84-%D8%A3%D9%8A%D8%A7%D9%85-%D8%B4%D9%87%D8%B1-%D8%AC%D9%85%D8%A7%D8%AF%D9%89/7612248",
+      "note": "Crescent not sighted on 9 Nov; Tue 10 Nov completes Jumada al-Ula; Wed 11 Nov is the first day of Jumada al-Akhirah 1448 (دار الإفتاء تعلن الأربعاء 11 نوفمبر أول أيام شهر جمادى الآخرة)",
+      "recorded_at": "2026-11-09"
+    },
+    {
+      "target": "OM",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-11",
+      "source": "Oman Main Committee for Sighting Hijri Crescents",
+      "url": "https://www.omannews.gov.om/topics/ar/3/show/476124",
+      "note": "بيان عدم ثبوت رؤية هلال شهر جمادى الآخرة لعام 1448هـ: moon sets before the sun on 9 Nov, Tue 10 Nov completes Jumada al-Ula, Wed 11 Nov is 1 Jumada al-Akhirah",
+      "recorded_at": "2026-11-09"
+    }
+  ],
+  "_comment": "Official announcements, one record per target and month. Add with scripts/record.py."
+}
