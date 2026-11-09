@@ -1,6 +1,22 @@
 {
   "_comment": "Why each generated entry in hijri_corrections.json has its value. Written by scripts/build.py.",
   "entries": {
+    "1448/6/EG": {
+      "offset": 0,
+      "official_first_day": "2026-11-11",
+      "raw_first_day": "2026-11-11",
+      "source": "Dar al-Ifta al-Misriyyah",
+      "url": "https://www.youm7.com/story/2026/11/9/%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%A5%D9%81%D8%AA%D8%A7%D8%A1-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%B9%D8%A7%D8%A1-11-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-%D8%A3%D9%88%D9%84-%D8%A3%D9%8A%D8%A7%D9%85-%D8%B4%D9%87%D8%B1-%D8%AC%D9%85%D8%A7%D8%AF%D9%89/7612248",
+      "recorded_at": "2026-11-09"
+    },
+    "1448/6/OM": {
+      "offset": 0,
+      "official_first_day": "2026-11-11",
+      "raw_first_day": "2026-11-11",
+      "source": "Oman Main Committee for Sighting Hijri Crescents",
+      "url": "https://www.omannews.gov.om/topics/ar/3/show/476124",
+      "recorded_at": "2026-11-09"
+    },
     "1448/6/diyanet": {
       "offset": 1,
       "official_first_day": "2026-11-10",
