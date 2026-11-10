@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "target": "BD",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-12",
+      "source": "Bangladesh National Moon Sighting Committee (Islamic Foundation)",
+      "url": "https://www.risingbd.com/national/news/670399",
+      "note": "চাঁদ দেখা যায়নি, ১২ নভেম্বর থেকে পবিত্র জমাদিউস সানি শুরু (moon not sighted on 10 Nov; Jumadal Ula completes 30 days on 11 Nov, Jumadius Sani counted from Thu 12 Nov)",
+      "recorded_at": "2026-11-10"
+    },
+    {
       "target": "EG",
       "hijri_year": 1448,
       "hijri_month": 6,
@@ -11,6 +21,26 @@
       "recorded_at": "2026-11-09"
     },
     {
+      "target": "LK",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-11",
+      "source": "Colombo Grand Mosque moon committee",
+      "url": "https://colombotimes.net/jumadal-akhira-1448-to-begin-on-wednesday-november-11/",
+      "note": "The moon marking the beginning of Jumadal Akhira 1448 AH was not sighted; the month will commence on Wednesday, November 11",
+      "recorded_at": "2026-11-10"
+    },
+    {
+      "target": "MA",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-11",
+      "source": "Morocco Ministry of Habous and Islamic Affairs",
+      "url": "https://snrtnews.com/article/162081",
+      "note": "وزارة الأوقاف: غدا الأربعاء فاتح شهر جمادى الآخرة لعام 1448 هـ (crescent sighted on the evening of Tue 29 Jumada al-Ula = 10 Nov)",
+      "recorded_at": "2026-11-10"
+    },
+    {
       "target": "OM",
       "hijri_year": 1448,
       "hijri_month": 6,
@@ -19,6 +49,26 @@
       "url": "https://www.omannews.gov.om/topics/ar/3/show/476124",
       "note": "بيان عدم ثبوت رؤية هلال شهر جمادى الآخرة لعام 1448هـ: moon sets before the sun on 9 Nov, Tue 10 Nov completes Jumada al-Ula, Wed 11 Nov is 1 Jumada al-Akhirah",
       "recorded_at": "2026-11-09"
+    },
+    {
+      "target": "PK",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-12",
+      "source": "Pakistan Central Ruet-e-Hilal Committee (Ministry of Religious Affairs)",
+      "url": "https://www.24newshd.tv/10-Nov-2026/jumada-ul-sani-moon-sighted-pakistan",
+      "note": "Crescent of Jumada-ul-Sani 1448 not sighted anywhere in Pakistan on 10 Nov; Wednesday 11 Nov is the last day of Jumada al-Awwal, Thursday 12 Nov the first day of Jumada-ul-Sani",
+      "recorded_at": "2026-11-10"
+    },
+    {
+      "target": "TN",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-11",
+      "source": "Mufti of the Tunisian Republic",
+      "url": "https://www.babnet.net/cadredetail-339426.asp",
+      "note": "مفتي الجمهورية: الأربعاء 11 نوفمبر 2026 مفتتح شهر جمادى الثانية 1448هـ",
+      "recorded_at": "2026-11-10"
     }
   ],
   "_comment": "Official announcements, one record per target and month. Add with scripts/record.py."
