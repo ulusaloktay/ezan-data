@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "target": "EG",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-11",
+      "source": "Dar al-Ifta al-Misriyyah",
+      "url": "https://www.dar-alifta.org/ar/articles/details/12529/",
+      "note": "عدم ثبوت رؤية هلال شهر جمادى الآخرة؛ يوم الأربعاء 11 نوفمبر 2026 هو أول أيام شهر جمادى الآخرة 1448",
+      "recorded_at": "2026-11-12"
+    },
+    {
+      "target": "MA",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-11",
+      "source": "Morocco Ministry of Habous and Islamic Affairs",
+      "url": "https://ihata.ma/societe/fatih-jumada-al-akhira-al-maghrib/",
+      "note": "ثبوت رؤية الهلال مساء الثلاثاء 29 جمادى الأولى (10 نونبر)؛ فاتح جمادى الآخرة 1448 يوم الأربعاء 11 نونبر 2026",
+      "recorded_at": "2026-11-12"
+    },
+    {
+      "target": "PK",
+      "hijri_year": 1448,
+      "hijri_month": 6,
+      "first_day": "2026-11-12",
+      "source": "Pakistan Central Ruet-e-Hilal Committee (Ministry of Religious Affairs)",
+      "url": "https://pakobserver.net/jamadi-ul-sani-moon-not-sighted-in-pakistan-first-day-on-nov-12/",
+      "note": "Jamadi-ul-Sani moon not sighted on 10 Nov; first day of Jamadi-ul-Sani 1448 on Thursday, November 12",
+      "recorded_at": "2026-11-12"
+    }
+  ],
+  "_comment": "Official announcements, one record per target and month. Add with scripts/record.py."
+}
